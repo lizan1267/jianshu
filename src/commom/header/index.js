@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { HeaderWrapper, Logo, Nav, NavItem, NavSearch,
-     Addition, Button } from './style'
+     Addition, Button, SearchWrapper } from './style'
 
 class Header extends Component {
     render() {
@@ -15,8 +15,10 @@ class Header extends Component {
                     <NavItem className="right">
                         <span className="iconfont">&#xe636;</span>
                     </NavItem>
-                    <NavSearch></NavSearch>
-                    <span className="iconfont">&#xe687;</span>
+                    <SearchWrapper>
+                        <NavSearch></NavSearch>
+                        <span className="iconfont">&#xe687;</span>
+                    </SearchWrapper>
                 </Nav>
                 <Addition>
                     <Button className="writting">

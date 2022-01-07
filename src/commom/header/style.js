@@ -27,7 +27,6 @@ export const Nav=styled.div`
     box-sizing:border-box;
     margin:0 auto;
 `;
-
 //创建一个Nav组件，本质上就是一个div，带有一些样式
 export const NavItem=styled.div`
     line-height:56px;
@@ -45,6 +44,20 @@ export const NavItem=styled.div`
         color:#ea6f5a;
     }
 `;
+//创建一个SearchWrapper组件，本质上就是一个div，带有一些样式
+export const SearchWrapper=styled.div`
+    float:left;
+    position:relative;
+    .iconfont{
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        width:30px;
+        line-height:30px;
+        text-align:center;
+        border-radius:15px;
+    }
+`
 //创建一个NavSearch组件，本质上就是一个input，带有一些样式
 export const NavSearch=styled.input.attrs({
     placeholder:"搜索"
