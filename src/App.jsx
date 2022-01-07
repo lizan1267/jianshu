@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux';
-import Header from './commom/header';
+import Header from './common/header';
 import { GlobalStyle } from './style';
 import { GlobalStyleIconFont } from './statics/iconfont/iconfont';
 import store from './store'
