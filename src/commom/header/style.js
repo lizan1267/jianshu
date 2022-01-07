@@ -48,6 +48,18 @@ export const NavItem=styled.div`
 export const SearchWrapper=styled.div`
     float:left;
     position:relative;
+    .slide-enter{
+        transition:all .2s ease-out;
+    }
+    .slide-enter-active{
+        width:240px;
+    }
+    .slide-exit{
+        transition:all .2s ease-out;
+    }
+    .slide-exit-active{
+        width:160px;
+    }
     .iconfont{
         position:absolute;
         right:5px;
@@ -56,6 +68,10 @@ export const SearchWrapper=styled.div`
         line-height:30px;
         text-align:center;
         border-radius:15px;
+        &.focused{
+            background:#777;
+            color:#fff;
+        }
     }
 `
 //创建一个NavSearch组件，本质上就是一个input，带有一些样式
@@ -76,6 +92,9 @@ export const NavSearch=styled.input.attrs({
     color:#666;
     &::placeholder{
         color:#999;
+    }
+    &.focused{
+        width:240px;
     }
 `;
 //创建一个Addition组件，本质上就是一个div，带有一些样式
