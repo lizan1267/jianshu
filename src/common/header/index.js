@@ -44,7 +44,9 @@ const Header = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        focused:state.header.get("focused")
+        focused:state.getIn(["header","focused"])
+        // 等价于   focused:state.get("header").get("focused")
+        // 此时的state和state.header都是immutable对象
     }
 }
 
