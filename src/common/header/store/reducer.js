@@ -5,7 +5,8 @@ import { fromJS } from 'immutable'
 // immutable  不可改变的
 
 const defaultState=fromJS({
-    focused:false
+    focused:false,
+    list:[]
 });
 
 export default (state=defaultState,action)=>{
@@ -15,6 +16,9 @@ export default (state=defaultState,action)=>{
             return state.set("focused",true);
         case constants.SEARCH_BLUR:
             return state.set("focused",false);
+        case constants.CHANGE_LIST:
+            return state.set("list",action.data);
+        default:
+            return state;
     }
-    return state;
 }
