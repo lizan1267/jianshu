@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
-import iconFont1 from './iconfont.ttf'
-import iconFont2 from './iconfont.woff'
-import iconFont3 from './iconfont.woff2'
+import iconFont1 from './iconfont.woff2?t=1641786402419'
+import iconFont2 from './iconfont.woff?t=1641786402419'
+import iconFont3 from './iconfont.ttf?t=1641786402419'
 // 写全局样式
 //css reset
 export const GlobalStyleIconFont = createGlobalStyle`
