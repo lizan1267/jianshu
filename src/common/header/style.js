@@ -4,6 +4,7 @@ import logoPic from '../../statics/logo.png';
 //创建一个HeaderWrapper组件，本质上就是一个div，带有一些样式
 export const HeaderWrapper=styled.div`
     position:relative;
+    z-index:1;
     height:56px;
     border-bottom:1px solid #f0f0f0;
 `;

@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Detail from './pages/detail';
 import { GlobalStyle } from './style';
 import { GlobalStyleIconFont } from './statics/iconfont/iconfont';
+import Login from './pages/login'
 import store from './store'
 class App extends Component {
     render() {
@@ -14,12 +15,13 @@ class App extends Component {
                 <GlobalStyle/>
                 <GlobalStyleIconFont/>
                 
-                <meta name="referrer" content="no-referrer" />
+                {/* <meta name="referrer" content="no-referrer" /> */}
                 <Provider store={store}>
                         <BrowserRouter>
                             <div>
                                 <Header />
                                 <Route path='/' exact component={Home}></Route>
+                                <Route path='/login' exact component={Login}></Route>
                                 <Route path='/detail/:id' exact component={Detail}></Route>
                             </div>
                         </BrowserRouter>
