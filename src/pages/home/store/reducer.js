@@ -32,7 +32,23 @@ const defaultState=fromJS({
         id:7,
         title:"历史",
         imgUrl:"//upload.jianshu.io/admin_banners/web_images/4318/60781ff21df1d1b03f5f8459e4a1983c009175a5.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
-    },]
+    },],
+    articleList:[{
+        id:1,
+        title:"分享一种工作中思维方式及实践",
+        desc:"问题 一直以来，我们在工作中主要做的事情大部分都是让自己在专业度上提升，让自己在团队中变得更重要。这点是非常正确的，市面上都有“打造自己深深的护...",
+        imgUrl:"//upload.jianshu.io/admin_banners/web_images/4318/60781ff21df1d1b03f5f8459e4a1983c009175a5.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+    },{
+        id:2,
+        title:"分享一种工作中思维方式及实践",
+        desc:"问题 一直以来，我们在工作中主要做的事情大部分都是让自己在专业度上提升，让自己在团队中变得更重要。这点是非常正确的，市面上都有“打造自己深深的护...",
+        imgUrl:"//upload.jianshu.io/admin_banners/web_images/4318/60781ff21df1d1b03f5f8459e4a1983c009175a5.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+    },{
+        id:3,
+        title:"分享一种工作中思维方式及实践",
+        desc:"问题 一直以来，我们在工作中主要做的事情大部分都是让自己在专业度上提升，让自己在团队中变得更重要。这点是非常正确的，市面上都有“打造自己深深的护...",
+        imgUrl:"//upload.jianshu.io/admin_banners/web_images/4318/60781ff21df1d1b03f5f8459e4a1983c009175a5.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+    }]
 });
 
 export default (state=defaultState,action)=>{
