@@ -9,7 +9,7 @@ export const HeaderWrapper=styled.div`
 `;
 
 //创建一个Logo组件，本质上就是一个a标签，带有一些样式
-export const Logo=styled.a`
+export const Logo=styled.div`
     position:absolute; 
     top:0;
     left:0;
