@@ -13,6 +13,8 @@ class App extends Component {
             <div>
                 <GlobalStyle/>
                 <GlobalStyleIconFont/>
+                
+                <meta name="referrer" content="no-referrer" />
                 <Provider store={store}>
                     <div>
                         <Header />
